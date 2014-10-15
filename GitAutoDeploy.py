@@ -10,6 +10,22 @@ class GitAutoDeploy(BaseHTTPRequestHandler):
     config = None
     quiet = False
     daemon = False
+    
+    
+    {
+	"port": 8001, 
+	"repositories": 
+	[{
+		"url": "https://github.com/xcitic/evotvo", 
+		"path": "/home8/xciticvi/public_html/evotvo",
+		"deploy": "echo deploying"
+	}, 
+	{
+		"url": "https://github.com/xcitic/evotvo",
+		"path": "/home8/xciticvi/public_html/evotvo"
+	}]
+}
+
 
     @classmethod
     def getConfig(myClass):
